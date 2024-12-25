@@ -42,8 +42,8 @@
 
 ## 注意事项 
 
-仓库默认是 private 的，所以只有有权限的人才能拉取包。但是很神奇的是默认不允许组织内的人可以拉取，那个权限是 internal。
-同时，需要先在 org 中的 setting - packages 设置可以调整的权限，默认只有 private，需要手动开放 internal 和 public，然后 org - packages 中才能调整各个 package 的权限。
+如果仓库是 private，package 也会是 private。如果仓库是 public，package 也会是 public。package 还有一个 internal 的权限，可以允许组织内所有人访问，即使对方不能访问仓库。
+在 org 中的 setting - packages 设置可以调整的权限，默认只有 private，需要手动开放 internal 和 public，然后 org - packages 中才能调整各个 package 的权限。
 link 后，package 的读写权限，会自动继承自 link 的 repo。
 
 >注意，不管 package 是否为 public，都需要配置 .npmrc 的 github registry，否则无法拉取。
