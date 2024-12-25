@@ -1,0 +1,27 @@
+{
+  "name": "@toyfield/pkg-a",
+  "version": "0.1.0",
+  "description": "a example package for github npm registry",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "toyfield/pkg-a",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "pnpm run build"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  },
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
+}
