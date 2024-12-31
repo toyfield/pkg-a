@@ -1,6 +1,6 @@
 {
   "name": "@toyfield/pkg-a",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "description": "a example package for github npm registry",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
